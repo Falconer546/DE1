@@ -51,7 +51,7 @@ begin
       -- End of counter reached
       else
         sig_count <= 0;
-      end if;                                    -- Each `if` must end by `end if`
+      end if;
     end if;
 
   end process p_clk_enable;

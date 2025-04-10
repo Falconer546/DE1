@@ -5,8 +5,9 @@ use ieee.numeric_std.all;
 entity SegLogic is
     port (
         clk     : in  std_logic;
-        reset   : in  std_logic;
-        digits  : in  std_logic_vector(31 downto 0);  -- 8x 4bit BCD (8 číslic)
+        rst     : in  std_logic;
+        clk_en  : in  std_logic;
+        digits  : in  std_logic_vector(31 downto 0);
         seg     : out std_logic_vector(6 downto 0);
         an      : out std_logic_vector(7 downto 0);
         dp      : out std_logic
@@ -15,24 +16,21 @@ end entity;
 
 architecture Behavioral of SegLogic is
 
-    signal refresh_counter : unsigned(19 downto 0) := (others => '0');
     signal digit_index     : unsigned(2 downto 0) := (others => '0'); -- 3-bit counter (0-7)
     signal current_digit   : std_logic_vector(3 downto 0);
 
 begin
 
-    -- Refresh rate divider
-    process(clk, reset)
+    process(clk)
     begin
-        if reset = '1' then
-            refresh_counter <= (others => '0');
-        elsif rising_edge(clk) then
-            refresh_counter <= refresh_counter + 1;
+        if rising_edge(clk) then
+            if rst = '1' then
+                digit_index <= (others => '0');
+            elsif clk_en = '1' then
+                digit_index <= digit_index + 1;
+            end if;
         end if;
     end process;
-
-    -- Select active digit
-    digit_index <= refresh_counter(19 downto 17);  -- ~1 kHz for 100 MHz clk
 
     process(digit_index, digits)
     begin

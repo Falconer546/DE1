@@ -71,7 +71,7 @@ begin
                     seg <= "0000100";
                     
                 when others =>
-                    seg <= "0000000";
+                    seg <= "1111111";
 
             end case;
 

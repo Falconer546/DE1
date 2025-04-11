@@ -12,8 +12,6 @@ architecture testbench of tb_clockEnable is
     constant clk_period : time := 10 ns;
 
 begin
-
-    -- Clock generation
     clk_process : process
     begin
         while now < 2 ms loop
@@ -25,16 +23,13 @@ begin
         wait;
     end process;
 
-    -- DUT instance
     uut: entity work.clockEnable
-        generic map (n_periods => 10)  -- generate pulse every 100 ns (10 * 10ns)
+        generic map (n_periods => 10)
         port map (
             clk   => clk,
             rst   => rst,
             pulse => pulse
         );
-
-    -- Stimulus
     stim_proc: process
     begin
         wait for 50 ns;

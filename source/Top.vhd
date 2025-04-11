@@ -21,10 +21,10 @@ architecture Behavioral of Top is
 
 begin
 
-    -- Clock enable for 10ms (for time counting)
+    -- Clock enable - 10ms
     clkEn10ms : entity work.clockEnable
         generic map (
-            n_periods => 1_000_000 -- 10ms @ 100 MHz
+            n_periods => 1_000_000
         )
         port map (
             clk   => CLK100MHZ,
@@ -32,10 +32,10 @@ begin
             pulse => clk_10ms
         );
 
-    -- Clock enable for 1kHz (for 7seg refresh)
+    -- Clock enable - 1kHz
     clkEn1kHz : entity work.clockEnable
         generic map (
-            n_periods => 100_000 -- 1ms @ 100 MHz (1 kHz)
+            n_periods => 100_000
         )
         port map (
             clk   => CLK100MHZ,
@@ -43,7 +43,7 @@ begin
             pulse => clk_1kHz
         );
 
-    -- Clock logic - time counter
+    -- Clock logic
     clkLogic : entity work.clockLogic
         port map (
             clk     => CLK100MHZ,

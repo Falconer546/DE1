@@ -9,8 +9,8 @@ entity segmentLogic is
         clk_en  : in  std_logic;
         digits  : in  std_logic_vector(31 downto 0);
         seg     : out std_logic_vector(6 downto 0);
-        an      : out std_logic_vector(7 downto 0);
-        dp      : out std_logic
+        an      : out std_logic_vector(7 downto 0)
+        --dp      : out std_logic
     );
 end entity;
 
@@ -38,35 +38,35 @@ begin
             when "000" =>
                 current_digit <= digits(3 downto 0);
                 an <= "11111110";
-                dp <= '1'; -- dot
+                --dp <= '1'; -- dot
             when "001" =>
                 current_digit <= digits(7 downto 4);
                 an <= "11111101";
-                dp <= '1';
+                --dp <= '1';
             when "010" =>
                 current_digit <= digits(11 downto 8);
                 an <= "11111011";
-                dp <= '1';
+                --dp <= '1';
             when "011" =>
                 current_digit <= digits(15 downto 12);
                 an <= "11110111";
-                dp <= '0';
+                --dp <= '0';
             when "100" =>
                 current_digit <= digits(19 downto 16);
                 an <= "11101111";
-                dp <= '0';
+                --dp <= '0';
             when "101" =>
                 current_digit <= digits(23 downto 20);
                 an <= "11011111";
-                dp <= '1';
+                --dp <= '1';
             when "110" =>
                 current_digit <= digits(27 downto 24);
                 an <= "10111111";
-                dp <= '1';
+                --dp <= '1';
             when others =>
                 current_digit <= digits(31 downto 28);
                 an <= "01111111";
-                dp <= '1';
+                --dp <= '1';
         end case;
     end process;
 

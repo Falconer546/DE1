@@ -41,34 +41,34 @@ begin
             case bin is
 
                 when x"0" =>
-                    seg <= "0000001";
+                    seg <= "1000000";
 
                 when x"1" =>
-                    seg <= "1001111";
+                    seg <= "1111001";
 
                 when x"2" =>
-                    seg <= "0010010";
-
-                when x"3" =>
-                    seg <= "0000110";
-
-                when x"4" =>
-                    seg <= "1001100";
-
-                when x"5" =>
                     seg <= "0100100";
 
+                when x"3" =>
+                    seg <= "0110000";
+
+                when x"4" =>
+                    seg <= "0011001";
+
+                when x"5" =>
+                    seg <= "0010010";
+
                 when x"6" =>
-                    seg <= "0100000";
+                    seg <= "0000010";
 
                 when x"7" =>
-                    seg <= "0001111";
+                    seg <= "1111000";
 
                 when x"8" =>
                     seg <= "0000000";
 
                 when x"9" =>
-                    seg <= "0000100";
+                    seg <= "0010000";
                     
                 when others =>
                     seg <= "1111111";

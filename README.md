@@ -17,7 +17,7 @@ VHDL implementation of a multifunctional stopwatch and countdown timer with lap 
 
 ## Architecture Overview
 
-![image3](https://github.com/user-attachments/assets/77fdb256-57ac-4855-afc1-4bd0890d6e9f)
+![DE1scheme](https://github.com/user-attachments/assets/0ba5b112-07f7-4582-8724-45989d4f6d25)
 
 
 ## Requirements

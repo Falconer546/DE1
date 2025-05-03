@@ -94,7 +94,11 @@ MIT License
 * Xilinx 7-Series FPGAs Overview: [https://www.xilinx.com/products/silicon-devices/fpga/7-series.html](https://www.xilinx.com/products/silicon-devices/fpga/7-series.html)
 
 ## Other help from forum and videos
+
 https://www.reddit.com/r/VHDL/comments/z6f7ke/error_10818_on_timer_stopwatch_code/
+
 https://stackoverflow.com/questions/30245803/vhdl-my-timer-does-not-work
+
 https://www.youtube.com/watch?v=EKX1K9oV_c4
+
 https://www.thecodingforums.com/threads/vhdl-programming.972568/

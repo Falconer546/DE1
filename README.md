@@ -17,13 +17,8 @@ VHDL implementation of a multifunctional stopwatch and countdown timer with lap 
 
 ## Architecture Overview
 
-```
-┌─────────────┐      ┌────────────┐      ┌─────────────┐
-│ clockEnable │─────▶ clockLogic │─────▶│ segmentLogic│
-└─────┬───────┘      └────┬───────┘      └─────┬───────┘
-      │                   │                   │
- 100 MHz CLK         Digits (BCD)        7-Segment Display
-```
+![image3](https://github.com/user-attachments/assets/77fdb256-57ac-4855-afc1-4bd0890d6e9f)
+
 
 ## Requirements
 

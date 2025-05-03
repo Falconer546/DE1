@@ -102,3 +102,5 @@ https://stackoverflow.com/questions/30245803/vhdl-my-timer-does-not-work
 https://www.youtube.com/watch?v=EKX1K9oV_c4
 
 https://www.thecodingforums.com/threads/vhdl-programming.972568/
+
+https://vhdlwhiz.com/create-timer/

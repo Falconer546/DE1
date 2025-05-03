@@ -1,7 +1,10 @@
 # FPGA Stopwatch & Countdown Timer on Nexys A7-50T
 
 VHDL implementation of a multifunctional stopwatch and countdown timer with lap time support and 7-segment display interface. Designed for the Digilent Nexys A7-50T board using a modular, fully synchronous architecture.
-
+## Project autors
+* Jan Brokeš
+* Jan Bozejovsky
+* 
 ## Features
 
 * Stopwatch mode:  min  sec  decisecond

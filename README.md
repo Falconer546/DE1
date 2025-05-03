@@ -106,6 +106,8 @@ https://www.edaplayground.com
 
 https://github.com/tomas-fryza/vhdl-labs/wiki/How-to-install-TerosHDL-on-Windows-and-Linux
 
+visual edite and consultation: ChatGPT
+
 ## Other help from forum and videos
 
 https://www.reddit.com/r/VHDL/comments/z6f7ke/error_10818_on_timer_stopwatch_code/

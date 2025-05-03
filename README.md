@@ -13,7 +13,7 @@ VHDL implementation of a multifunctional stopwatch and countdown timer with lap 
   * Timing (clockLogic)
   * Display (segmentLogic)
   * Clock enable generation (clockEnable)
-* Debounced and edge-detected control via push-buttons
+
 
 ## Architecture Overview
 

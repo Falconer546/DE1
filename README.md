@@ -71,7 +71,6 @@ Each core module includes a simulation-ready testbench with basic waveform gener
 
 * tb\_clockEnable.vhd
 * tb\_clockLogic.vhd
-* tb\_segmentLogic.vhd
 
 ## Design Guidelines Followed
 
@@ -98,6 +97,14 @@ MIT License
 
 * Digilent Nexys A7-50T Reference Manual: [https://digilent.com/reference/programmable-logic/nexys-a7/start](https://digilent.com/reference/programmable-logic/nexys-a7/start)
 * Xilinx 7-Series FPGAs Overview: [https://www.xilinx.com/products/silicon-devices/fpga/7-series.html](https://www.xilinx.com/products/silicon-devices/fpga/7-series.html)
+
+## References
+
+https://vhdl.lapinoo.net
+
+https://www.edaplayground.com
+
+https://github.com/tomas-fryza/vhdl-labs/wiki/How-to-install-TerosHDL-on-Windows-and-Linux
 
 ## Other help from forum and videos
 

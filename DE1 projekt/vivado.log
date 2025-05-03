@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May  3 19:07:38 2025
+# Process ID: 32184
+# Current directory: C:/Users/honzi/DE1 projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33096 C:\Users\honzi\DE1 projekt\DE1 projekt.xpr
+# Log file: C:/Users/honzi/DE1 projekt/vivado.log
+# Journal file: C:/Users/honzi/DE1 projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/honzi/DE1 projekt/DE1 projekt.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/honzi/DE1 projekt/DE1 projekt.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/honzi/DE1 projekt/DE1 projekt.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  3 19:08:08 2025...

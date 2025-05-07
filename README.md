@@ -6,7 +6,7 @@ VHDL implementation of a multifunctional stopwatch and countdown timer with lap 
 
 ## Project autors
 * Jan Brokeš
-* Jan Bozejovsky
+* Jan Božejovský
  
 ## Features
 
